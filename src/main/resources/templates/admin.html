@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница Админа</title>
+</head>
+<body>
+    <h1>Страница Админа</h1>
+<!--    <form action="admin/userTable" target="_blank">-->
+<!--        <button>User Table</button>-->
+<!--    </form>-->
+
+    <input type="button" value="User Table"
+           onclick="window.location.href = '/admin/userTable'"/>
+
+
+<!--    <form action="admin/addNewUser" target="_blank">-->
+<!--        <button>Add new user</button>-->
+<!--    </form>-->
+
+    <input type="button" value="Add new user"
+           onclick="window.location.href = '/admin/addNewUser'"/>
+
+
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Logout</button>
+    </form>
+
+</body>
+</html>

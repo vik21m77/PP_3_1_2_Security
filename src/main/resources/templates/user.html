@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>Spring Security Example</title>
+</head>
+<body>
+    <h1>Страница пользователя</h1>
+
+    <p>Ваш ID: <span th:text="${user.id}">ID</span></p>
+    <p>Имя: <span th:text="${user.username}"></span></p>
+    <p>Фамилия: <span th:text="${user.lastName}"></span></p>
+
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">Logout</button>
+    </form>
+
+</body>
+</html>
